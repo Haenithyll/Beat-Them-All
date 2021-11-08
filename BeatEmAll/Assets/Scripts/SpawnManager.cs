@@ -50,7 +50,7 @@ public class SpawnManager : MonoBehaviour
 
     IEnumerator WaitBeforeDestroy()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(7f);
         Destroy(gameObject);
     }
 }
