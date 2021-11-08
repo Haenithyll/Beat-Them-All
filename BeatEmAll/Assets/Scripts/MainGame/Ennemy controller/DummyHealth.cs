@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DummyHealth : MonoBehaviour, IDamageable
 {
-    public int startingHealth = 7;
+    public int startingHealth = 4;
     public float HitTime = 0.1f;
     private int currentHealth;
     public Color HitColor;
@@ -13,10 +13,15 @@ public class DummyHealth : MonoBehaviour, IDamageable
     private GameObject Explosion;
     Color actualcolor;
 
+    //Round info
+    int actual_round;
 
+    private void Awake() {
+        actual_round= GameObject.FindWithTag("MainGame").GetComponent<MainGame>().round_nbr;
+    }
     void Start()
     {
-        currentHealth = startingHealth;
+        currentHealth = startingHealth*actual_round;
         actualcolor = GetComponentInChildren<Renderer>().material.color;
     }
 

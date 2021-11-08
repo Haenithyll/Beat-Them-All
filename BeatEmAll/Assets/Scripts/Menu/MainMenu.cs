@@ -71,11 +71,11 @@ public class MainMenu : MonoBehaviour
     public void OnResolutionChanged(int newValue)
     {
         if (newValue == 0)
-            Screen.SetResolution(1920, 1080, false);
+            Screen.SetResolution(1920, 1080, true);
         if (newValue == 1)
-            Screen.SetResolution(1024, 768, false);
+            Screen.SetResolution(1024, 768, true);
         if (newValue == 2)
-            Screen.SetResolution(1280, 720, false);
+            Screen.SetResolution(1280, 720, true);
     }
 
     private void Update()
