@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Character
+  - Metal
+  - ExplosiveBarrel
+  - Target
+  - Ennemy
+  - FxTemporaire
+  - Ammo
+  - CrossHair
+  - Health
+  - Red_filter
   layers:
   - Default
   - TransparentFX
